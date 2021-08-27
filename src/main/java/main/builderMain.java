@@ -6,7 +6,7 @@ import logging.ConsoleLogger;
 public class builderMain {
     public static void main(String[] args) {
         LunchOrder.Builder builder = new LunchOrder.Builder();
-        builder.bread("Bread").dressing("Dressing").meat("Meat");
+        builder.bread("Bread").dressing("Dressing");
         LunchOrder lunchOrder = builder.build();
         ConsoleLogger.writeInfo(lunchOrder.getBread());
         ConsoleLogger.writeInfo(lunchOrder.getCondiments());
