@@ -1,12 +1,12 @@
 package Factory;
 
 public class WebsiteFactory {
-    public static Website getWebsite(String type){
+    public static Website getWebsite(WebsiteType type){
         switch (type){
-            case "Blog":{
+            case BLOG:{
                 return new Blog();
             }
-            case "Ecommerce":{
+            case SHOP:{
                 return new Ecommerce();
             }
             default:{
